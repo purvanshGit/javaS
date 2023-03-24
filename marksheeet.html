@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .r{
+            text-transform: uppercase;
+            position: relative;
+            left: 440px;
+            font-size: 100px;
+            top: 60px;
+            background-color: aqua;
+        }
+        #reptc {
+            position: relative;
+            left: 500px;
+            top: 100px;
+
+        }
+        #ttl{
+            font-size: 30px;   
+            position: relative;
+            left: 500px;
+            top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="r">RESULT</span>
+    <div id="reptc">
+        <table border="5" >
+            <tr>
+                <th>S.no.</th>
+                <th>subjects <span></span></th>
+                <th>Marks <span></span></th>
+                <th>Grade <span></span></th>
+            </tr>
+
+            <tr>
+                <td>1.</td>
+                <td>maths <span></span></td>
+                <td id="mt">marks<span></span></td>
+                <td id="mtg">grade <span></span></td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>physics <span></span></td>
+                <td id="phy">marks<span></span></td>
+                <td id="pyg">grade <span></span></td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>chemistry <span></span></td>
+                <td id="chem">marks<span></span></td>
+                <td id="cmg">grade <span></span></td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>english <span></span></td>
+                <td id="en">marks<span></span></td>
+                <td id="eng">grade <span></span></td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>computer science <span></span></td>
+                <td id="cs">marks<span></span></td>
+                <td id="csg">grade <span></span></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        
+        let maths = parseInt(prompt("Enter your total marks of MATHEMATICS-"))
+        let computer_science = parseInt(prompt("Enter your total marks of COMPUTER SCIENCE-"))
+        let physics = parseInt(prompt("Enter your total marks PHYSICS-"))
+        let chemistry = parseInt(prompt("Enter your total marks in CHEMISTRY-"))
+        let english = parseInt(prompt("Enter your total marks in ENGLISH-"))
+        document.getElementById("cs").innerHTML = computer_science
+        document.getElementById("en").innerHTML = english
+        document.getElementById("mt").innerHTML = maths
+        document.getElementById("phy").innerHTML = physics
+        document.getElementById("chem").innerHTML = chemistry
+
+        let total_marks = maths + physics + chemistry + computer_science + english
+        document.getElementById("ttl").innerHTML=total_marks
+        let percent = total_marks / 5
+        // alert("your percentage is-" + percentage + "%")
+        // if (total_marks >= 90 && total_marks <= 100) {
+            //     alert("A1")
+            // }
+            // else if (total_marks >= 80 && total_marks <= 90) {
+                //     alert("A2")
+                // }
+                // else if (total_marks >= 70 && total_marks <= 80) {
+                    //     alert("B1")
+                    // }
+                    // else if (total_marks >= 60 && total_marks <= 70) {
+                        //     alert("B2")
+                        // }
+                        // else if (total_marks >= 50 && total_marks <= 60) {
+            //     alert("C1")
+            // }
+            // else if (total_marks >= 40 && total_marks <= 50) {
+                //     alert("C2")
+                // }
+                // else if (total_marks >= 30 && total_marks <= 40) {
+                    //     alert("D1")
+                    //     if (total_marks >= 30 && total_marks <= 37) {
+                        //         let i = parseInt(prompt("enter grace  marks-"))
+                        //         i = total_marks + i
+                        //         alert("your marks after adding grace marks is-" + i)
+                        
+                        //     }
+                        // }
+                        // else if (total_marks >= 20 && total_marks <= 30) {
+                            //     alert("D2")
+                            // }
+                            // else {
+                                //     alert("you have entered something else make sure you havwe entered 0-500")
+                                // }
+                                
+                                
+                                
+                                
+                                // let a = parseInt(prompt("enter any number"))
+                                // if (a % 2 == 0) {
+                                    //     alert("you entered an even number")
+            // }
+            // else {
+                //     alert("you entered an odd number")
+                // }
+                
+                </script>
+<p id="ttl">Total Marks-</p>
+</body>
+
+</html>
